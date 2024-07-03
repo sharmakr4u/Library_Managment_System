@@ -127,7 +127,7 @@ INNER JOIN AUTHORS
 ON BOOKS.AUTHOR_ID = AUTHORS.AUTHOR_ID
 ORDER BY BOOKS.DATE_OF_PUBLICATION;
 
-#This query will selecl all the customers who took the membership in the last year;
+#This query will select all the customers who took the membership in the last year;
 SELECT * FROM CUSTOMERS 
 WHERE (YEAR(MEMBERSHIP_DATE) >= YEAR(CURDATE()) - 1);
 
